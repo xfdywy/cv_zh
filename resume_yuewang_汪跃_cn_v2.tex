@@ -1,0 +1,168 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+% \usepackage{NotoSansSC_external}
+% \usepackage{NotoSerifCJKsc_external}
+% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+\usepackage{hyperref}
+% \usepackage{fontawesome5}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{汪跃}
+
+\basicInfo{
+  \email{yuewang\_yw@foxmail.com} \ 
+  \phone{(+86) 18810295643}  }
+\centerline{\faMap 丹棱街5号， 2号楼， 北京市海淀区， 100080， 中国}
+%  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+ 
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{概率论与数理统计, 北京交通大学}， 直博生 }{2015 -- 2020(预计)}
+%\textit{在读博士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
+导师： 马志明； 院士； 中国科学院数学与系统科学研究院
+\datedsubsection{\textbf{信息与计算科学, 北京交通大学}，本科生}{2011 -- 2015}
+{综合绩点: 92.03/100, 排名：1/98}
+
+\section{\faUsers\ 研究兴趣}
+ 
+
+\datedsubsection{\textbf{强化学习}  } {}
+策略评估和策略优化问题中的算法设计与分析； 深度强化学习 
+
+\datedsubsection{\textbf{随机优化算法}  } {}
+深度神经网络中的优化算法设计与分析； 分布式优化算法的泛化能力分析
+ 
+
+
+\section{\faBook\ 论文}
+
+\begin{enumerate}
+	\item \textbf{Wang Yue}, Wei Chen, Yuting Liu, Zhi-Ming Ma and Tie-Yan Liu. “Finite Sample Analysis of the GTD Policy Evaluation Algorithms in Markov Setting.” Advances in Neural Information Processing Systems. 2017. 
+	
+	\item Meng Qi, \textbf{Yue Wang}, Wei Chen, Taifeng Wang, Zhi-Ming Ma and Tie-Yan Liu. “Generalization Error Bounds for Optimization Algorithms via Stability.” Thirty-First AAAI Conference on Artificial Intelligence. 2017.
+	
+	\item Meng Qi, Wei Chen, \textbf{Yue Wang}, Zhi-Ming Ma and Tie-Yan Liu. “Convergence analysis of distributed stochastic gradient descent with shuffling.” Neurocomputing.
+	
+	\item Liang Ma, Edmund T Rolls, Xiuqin Liu, Yuting Liu, Zeyu Jiao, \textbf{Yue Wang}, Weikang Gong, Zhi-Ming Ma, Fuzhou Gong, Lin Wan, "Multi-scale analysis of schizophrenia risk genes, brain structure, and clinical symptoms reveals integrative clues for subtyping schizophrenia   patients." Journal of Molecular Cell Biology.
+	
+	
+	\item \textbf{Wang Yue}, Qi Meng, Wei Chen, Yuting Liu, Zhi-Ming Ma and Tie-Yan Liu. “Target Transfer Q-Learning and Its Convergence Analysis.”   Neurocomputing.
+		
+	\item \textbf{Wang Yue}, Yuting Liu, Zhi-Ming Ma "The Scale-Invariant Space for Attention Layer in Neural  Network."   Neurocomputing.
+
+	\item \textbf{Wang Yue}, Qi Meng, Wei Chen, Yuting Liu, Zhi-Ming Ma and Tie-Yan Liu.  "Positively Scale-Invariant Space for Recurrent Neural Networks with ReLU Activations." In preparation.
+
+\end{enumerate}
+
+
+
+%\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
+%\role{\LaTeX, Python}{个人项目}
+%\begin{onehalfspacing}
+%优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
+%\begin{itemize}
+%  \item 容易定制和扩展
+%  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
+%  \item 支持 FontAwesome 4.5.0
+%\end{itemize}
+%\end{onehalfspacing}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+\section{\faCogs\ 科研经历}
+ 
+
+
+\datedsubsection{\textbf{1. 强化学习}, 微软亚洲研究院}{2017 -- 2019}
+强化学习问题按照目标的不同可以分为策略评估问题与策略优化问题。考虑到强化学习问题数据收集代价很高，在理论上清楚理解算法的表现，有助于我们理解算法的各个模块，进而更好的改进算法。
+
+a. \textbf{（数据非独立同分布情形下，证明和分析了一类基于梯度的策略评估算法的收敛效率表现）}  
+\begin{itemize}
+  \item 策略评估问题旨在快速准确地估计特定策略下所有状态的预期收益。 考虑到强化学习数据的马尔可夫性， 一个关键而有意义的问题是： 在数据非独立同分布的情况下相关算法是否还能收敛， 收敛速率如何受到数据非独立同分布性质的影响？
+  
+  \item 通过引入混合时间这一工具，我们刻画了数据非独立同分布的程度，在数据非独立同分布的情况下首次证明了更一般的鞍点问题的收敛速率，进而给出了一类基于梯度的策略评估算法在on-poliy 和off-policy 的情况下的收敛速率分析。我们证明了策略评估算法在数据非独立同分布的情况下依然收敛，并且混合时间越大，收敛速率会变得越慢。
+\end{itemize}
+
+
+\faHandORight 在这个工作中，我负责了问题的提出与理解， 非独立同分布情形下一般理论与策略评估问题的分析与证明，验证实验的设计与代码实现。
+
+b. \textbf{（系统研究了基于最优贝尔曼方程的Q-learning算法的收敛速率与各个影响因素的关系，提出了有理论保证的迁移强化学习算法）} 
+\begin{itemize}
+  \item 策略优化问题旨在设计高效算法找到最优的策略。贝尔曼方程为强化学习的求解提供了工具与理论保证， 在贴近实际的假设下，基于贝尔曼方程的时间差分算法（如Q-learning）的收敛速率以及对其各种影响因素的分析是一个非常重要的问题。
+  \item 我们细致研究了时间差分算法的收敛速率，理论上证明了收敛速率与error ratio呈指数关系。 基于理论发现，我们提出了一个有收敛速率保证的迁移强化学习算法（Target Transfer Q-Learning），并设计了实验验证了我们的理论结果。
+\end{itemize}
+
+\faHandORight 在这个工作中，我负责了问题的提出与理解， 算法收敛速率的理论分析与证明，迁移强化学习实验的设计与代码实现。
+
+% \datedsubsection{\textbf{强化学习中的策略优化问题}, 微软亚洲研究院}{2018 -- 2019}
+
+\datedsubsection{\textbf{2.深度神经网络中的优化问题}, 微软亚洲研究院}{2018 -- 2019}
+a.\textbf{（为多种常用的网络结构设计新的非冗余参数空间，并且高效实现了新空间上的优化算法）} 
+
+\begin{itemize}
+%  \item 深度神经网络复杂的表现能力使其在很多实际问题中表现出非常好的拟合能力。%常用的随机优化算法(SGD 等)往往与神经网络的结构无关，只是沿着负梯度的方向在神经网络的参数空间更新神经网络的参数。
+  \item 以ReLU作为激活函数的多种常用神经网络结构天然存在正伸缩不变性,即存在无穷多参数不同的神经网络互相等价这就使得优化算法在等价的神经网络上表现差别很大, 因而潜在地对优化过程产生负面影响。
+  \item 通过考虑神经网络的结构信息，我们为等宽/不等宽/带跨层连接 的 全连接网络和CNN 网络，RNN，Attention Layer等现代常用的多种深度神经网络设计了新的参数空间（Path空间），并且设计实验验证了新空间上优化的有效性。新的算法在图像和文本等多个任务上取得了很好的结果。
+\end{itemize} 
+    
+ \faHandORight 在这个工作中，我负责在多种网络结构之下, 高效率实现在Path空间上的优化算法。相关代码成果形成了一套codebase 和pipline为组内其他相关工作提供帮助，开源工作正在进行中。为此，我也负责了理论证明新的参数空间的存在，并且根据理论来设计算法构造Path空间。
+   
+ \datedsubsection{\textbf{3.随机优化算法的理论性质分析}, 微软亚洲研究院}{2016 -- 2017}
+
+ a. \textbf{（利用随机优化算法的stability，分析算法的泛化能力）} 
+ 利用优化算法来求解一个机器学习问题的泛化误差，通常可以分解成优化误差，估计误差和近似误差三部分。我们利用算法的稳定性这一指标，对算法的泛化误差进行刻画，得到了相比于之前更紧的结论。 \\
+%  优化误差受到算法的收敛速率的影响，估计误差反映了经验样本和总体分布之间的差距， 近似误差由函数空间表达能力所限制。
+ b. \textbf{（在实际数据处理中采用shuffle的过程而非随机采样的情况下，讨论分布式优化算法的收敛性）} 在实际问题中考虑到时间代价，数据往往不是独立同分布采样，而是随机打乱后训练一遍， 如此循环。我们在分布式优化中， 分析了充分与不充分打乱所有数据对最后优化算法的收敛速率的影响。\\
+ \faHandORight 在这两个工作中，我参与论文证明思路的讨论， 负责论文实验部分的代码实现与结果可视化。
+
+
+
+
+ 
+
+
+
+
+\section{\faHeartO\ 获奖情况}
+\datedline{校级三好学生}{2016.12}
+\datedline{国家奖学金}{2015.12}
+\datedline{一等学业奖学金}{2012.12}
+\datedline{国家奖学金}{2012.12}
+% vspace
+\section{\faUser\ 其他经历}
+% increase linespacing [parsep=0.5ex]
+%\begin{itemize}[parsep=0.5ex]
+  \datedsubsection{\textbf{实习生}, 机器学习组， 微软亚洲研究院。 Mentor：
+	\href{https://www.microsoft.com/en-us/research/people/wche/}{{\color{blue}Wei Chen}},\href{https://www.microsoft.com/en-us/research/people/tyliu/}{{\color{blue}Tie-Yan Liu}}   }{2016.8 - 至今}
+  \datedsubsection{\textbf{ACML AWRL'18会议，做paper talk}， 北京交通大学 }{2018.11}
+  \datedsubsection{\textbf{NIPS-2017会议，做poster展示}，长滩，美国}{2017.12}
+  \datedsubsection{\textbf{生物医疗影像遗传学项目}{\small,脑fMRI影像及全基因组数据的处理和分析,中科院/复旦大学}}{2015.1 - 2016.4}
+%\end{itemize}
+%  \datedsubsection{\textbf{实习生}, 机器学习组， 微软亚洲研究院 }{08/2016-至今}
+%  \item GitHub: https://github.com/username
+%  \item 语言: 英语 - 熟练(TOEFL xxx)
+\section{\faInfo\ 技能}
+% increase linespacing [parsep=0.5ex]
+%\begin{itemize}[parsep=0.5ex]
+   \textbf{语言：}  中文，英文\\
+   \textbf{编程语言：}   python, R, matlab, latex, c++ \\
+    \textbf{其他框架和工具：}  pytorch, tensorflow; git, docker, bash
+%   \datedsubsection{\textbf{参加NIPS-2017会议，并做poster展示}}{12/2017}
+%   \datedsubsection{\textbf{参加AWRL'18会议，并做paper talk}}{11/2018}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
